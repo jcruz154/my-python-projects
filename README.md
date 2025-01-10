@@ -3,6 +3,8 @@ This repository contains projects I coded using python.
 
 ### Project 1: Multiplication Quiz 
 **Summary**: This program creates a quiz that tests people on their multiplication skills
+
+
 **Key Features**: 
 - Able to choose amount of questions asked
 - Displays a timer and final score at the end of the quiz
@@ -11,6 +13,7 @@ This repository contains projects I coded using python.
 
   ### Project 2: Fairy Name Generator
 **Summary**: This program asks the person a series of questions in order to reveal their flower name. 
+
 **Key Features**: 
 - Each answer depends on the next set of answers
 - Fun questions!!
