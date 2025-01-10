@@ -11,7 +11,7 @@ This repository contains projects I coded using python.
 - Able to choose difficulty levels (easy, medium, or hard)
 
 
-  ### Project 2: Fairy Name Generator
+### Project 2: Fairy Name Generator
 **Summary**: This program asks the person a series of questions in order to reveal their flower name. 
 
 **Key Features**: 
