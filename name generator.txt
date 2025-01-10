@@ -1,0 +1,42 @@
+#Jasmine Cruz
+#10/17/24
+#Name Generator
+
+#Init
+
+#Function
+
+print("Welcome to Your Flower Name 2000")
+print("Answer the questions to find out what flower you are!")
+
+ans = input("Sweet (swe) or savory (sav) ?")
+if ans =="swe":
+    ans = input("Summer (sum) or spring (spr) ?")
+    if ans == "sum":
+        ans = input("watermelon (wat) or apple (app) ?")
+        if ans == "wat":
+            print("Your flower is a Lily!")
+        else:
+            print("Your flower is a sunflower!")
+    if ans == "spr":
+        ans = input("grapes (gra) or orange (ora) ?")
+        if ans == "gra":
+             print("Your flower is a rose!")
+        else:
+             print("Your flower is a tulip!")
+
+elif ans == "sav":
+    ans = input("autumn (aut) or winter (win) ?")
+    if ans =="aut":
+        ans = input("Pineapple (pin) or cherry (che) ?")
+        if ans =="pin":
+            print("Your flower is a orchid!")
+        else:
+            print("Your flower is a marigold!")
+    if ans =="win":
+        ans = input("kiwi (kiw) or banana (ban) ?")
+        if ans == "kiw":
+            print("Your flower is a peony!")
+        else:
+            print("Your flower is a hyacinth!")
+

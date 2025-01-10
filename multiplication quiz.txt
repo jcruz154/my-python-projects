@@ -1,0 +1,75 @@
+#Jasmine Cruz
+#1/8/25
+#Multiplication Quiz
+
+#init
+import random
+import time
+points = 0
+
+#function
+def multiplication_quiz():
+    global points
+    print("Welcome to multplication quiz.")
+    start_time = time.time()
+
+    ques = int(input("Input how many questions do you want to answer: "))
+    diff = input("Choose Difficulty: Easy, Medium, or Hard: ")
+    if diff == "easy":
+
+         for i in range(ques):
+             multi_num1 = random.randint(1,5)
+             multi_num2 = random.randint(1,5)
+             product = multi_num1 * multi_num2
+             print(str(multi_num1) + "*" + str(multi_num2) + "=")
+             answer = int(input("Input answers: "))
+             if answer == product:
+                 points = points + 1
+                 print("Correct!")
+             else:
+                points = points + 0
+                print("Incorrect, the correct answer is " + str(product) + ".")
+
+
+    elif diff == "medium":
+        for i in range(ques):
+            multi_num1 = random.randint(1,10)
+            multi_num2 = random.randint(1,10)
+            product = multi_num1 * multi_num2
+            print(str(multi_num1) + "*" + str(multi_num2) + "=")
+            answer = int(input("Input answers: "))
+            if answer == product:
+                points = points + 1
+                print("Correct!")
+            else:
+                points = points + 0
+                print("Incorrect, the correct answer is " + str(product) + ".")
+
+    elif diff == "hard":
+        for i in range(ques):
+            multi_num1 = random.randint(1,20)
+            multi_num2 = random.randint(1,20)
+            product = multi_num1 * multi_num2
+            print(str(multi_num1) + "*" + str(multi_num2) + "=")
+            answer = int(input("Input answers: "))
+            if answer == product:
+                points = points + 1
+                print("Correct!")
+            else:
+                points = points + 0
+                print("Incorrect, the correct answer is " + str(product) + ".")
+
+    print("You got " +  str(points) + "/" + str(ques) + " correct!" )
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    round_num = round(elapsed_time,1)
+    print("You completed the quiz in " + str(round_num) + " seconds.")
+
+    again = input("Would you like to play again?")
+    if again == "yes":
+        multiplication_quiz()
+    else:
+        print("Goodbye!!")
+
+#Main
+multiplication_quiz()

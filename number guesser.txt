@@ -1,0 +1,51 @@
+#Guessing Game
+#Jasmine Cruz
+#11/11/24
+
+#Initialize
+import random
+
+
+#Function
+def guessing_game():
+    print("Welcome to the Guessing Game! Enter a number to begin.")
+    guessed = int(input("Enter Number"))
+    print(guessed)
+    secret = random.randint(0,10)
+    if secret == guessed:
+        print("You are correct! You win!")
+    elif secret < guessed:
+        print("Incorrect, too high! Try again next time!")
+    else:
+        print("Incorrect, too low! Try again next time!")
+
+    again = input("Would you like to try again??")
+    if again == "yes":
+        print("Welcome back to the Guessing Game! Enter a number to begin.")
+        guessed = int(input("Enter Number"))
+        print(guessed)
+        secret = random.randint(0,10)
+        if secret == guessed:
+            print("You are correct! You win!")
+        elif secret < guessed:
+            print("Incorrect, too high! Try again next time!")
+        else:
+            print("Incorrect, too low! Try again next time!")
+
+
+    again_2 = input("Would you like to try again??")
+    if again_2 == "yes":
+        print("Welcome back to the Guessing Game! Enter a number to begin.")
+        guessed = int(input("Enter Number"))
+        print(guessed)
+        secret = random.randint(0,10)
+        if secret == guessed:
+            print("You are correct! Good job!")
+        elif secret < guessed:
+            print("Incorrect, too high! You lose!")
+        else:
+            print("Too low!! Better luck next time!")
+
+
+#Main
+guessing_game()
